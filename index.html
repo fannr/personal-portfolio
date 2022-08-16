@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="assets/styles/main.css" />
     <meta name="description" content="Build things for the web" />
     <meta name="keywords" content="HTML5, CSS, Javascript, Web Development" />
-    <meta name="author" content="Fannr" />
+    <meta name="author" content="Noerra" />
     <link
       rel="shortcut icon"
       href="assets/images/code-slash.svg"
       type="image/x-icon"
     />
+
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/card.js" defer></script>
   </head>
   <body id="home">
     <div class="loading">
@@ -35,8 +38,8 @@
             </h3>
           </div>
 
-          <div class="menu-btn" id="menu">
-            <div class="menu-btn__hamburger"></div>
+          <div class="menu-btn navLink" id="menu" animate-nav>
+            <div class="menu-btn__hamburger" id="menuBar"></div>
           </div>
 
           <div class="navbar-nav" id="navbarNav">
@@ -103,42 +106,48 @@
       <article>
         <!-- About -->
         <aside class="container about" data-scroll-banner id="about">
-          <div class="content__about">
-            <h2 animate class="animate">About Me</h2>
-            <div animate class="content__p animate">
-              <p>
-                Hello! My name is Fatah Noer Arbain, I graduated from SMKN 2
-                Jakarta majoring in Software Engineering, born in Jakarta On
-                June 4, 2003, the current age is 19 years old. and now I live in
-                bekasi city. I am a Creative, Energetic, Honest, and Responsible
-                person towards work. I am ready to work under pressure according
-                to the rules and tufgas of the company.
-              </p>
-
-              <p>
-                I enjoy creating things Website. My interest in web development
-                started from me learning scholl about HTML, CSS, and others.
-              </p>
-
-              <p>
-                Here are some of the SkilI that I have understood recently and
-                my hobbies:
-              </p>
-            </div>
-            <ul animate class="animate">
-              <div class="skill">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript (ES6+)</li>
-              </div>
-              <div class="hobby">
-                <li>Wathing Anime</li>
-                <li>Playing Games</li>
-              </div>
-            </ul>
+          <div class="title animate" animate>
+            <h2>About Me</h2>
+            <div class="line"></div>
           </div>
-          <div class="picture__about animate" animate>
-            <img src="assets/images/profile.jpg" alt="Fatah" />
+          <div class="content__about">
+            <div>
+              <div animate class="content__p animate">
+                <p>
+                  Hello! My name is Fatah Noer Arbain, I graduated from SMKN 2
+                  Jakarta majoring in Software Engineering, born in Jakarta On
+                  June 4, 2003, the current age is 19 years old. and now I live
+                  in bekasi city. I am a Creative, Energetic, Honest, and
+                  Responsible person towards work. I am ready to work under
+                  pressure according to the rules and tufgas of the company.
+                </p>
+
+                <p>
+                  I enjoy creating things Website. My interest in web
+                  development started from me learning scholl about HTML, CSS,
+                  and others.
+                </p>
+
+                <p>
+                  Here are some of the SkilI that I have understood recently and
+                  my hobbies:
+                </p>
+              </div>
+              <ul animate class="animate">
+                <div class="skill">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript (ES6+)</li>
+                </div>
+                <div class="hobby">
+                  <li>Wathing Anime</li>
+                  <li>Playing Games</li>
+                </div>
+              </ul>
+            </div>
+            <div class="picture__about animate" animate>
+              <img src="assets/images/profile.jpg" alt="Fatah" />
+            </div>
           </div>
         </aside>
         <!-- About -->
@@ -149,7 +158,10 @@
           id="experience"
         >
           <div>
-            <h2 animate class="animate">Experience</h2>
+            <div class="title animate" animate>
+              <h2>Experience</h2>
+              <div class="line"></div>
+            </div>
 
             <div animate class="animate">
               <h3>Web Developer (Intership)</h3>
@@ -183,7 +195,10 @@
 
         <section class="container project" data-scroll-banner id="projects">
           <div class="project__container">
-            <h2 animate class="animate">My Some Projects</h2>
+            <div class="title animate" animate>
+              <h2>My Some Projects</h2>
+              <div class="line"></div>
+            </div>
             <div class="container__card"></div>
           </div>
         </section>
@@ -203,6 +218,7 @@
             href="mailto:fatah.noer398@gmail.com"
             target="_blank"
             class="animate"
+            animate
             >Say Hello</a
           >
         </section>
@@ -215,7 +231,5 @@
         Copyright &copy; Reserved & Built by Fatah Noer.
       </p>
     </footer>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/card.js"></script>
   </body>
 </html>

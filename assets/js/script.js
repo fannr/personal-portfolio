@@ -1,7 +1,23 @@
 const nav = document.querySelector(".navbar");
 const menuBtn = document.querySelector(".menu-btn");
-const navbarNav = document.querySelector(".navbar-nav");
+const navbarNav = document.querySelector("#navbarNav");
 const elNavlink = document.querySelectorAll(".navbar-nav .navLink");
+
+menuBtn.addEventListener("click", function (e) {
+  this.classList.toggle("active");
+  navbarNav.classList.toggle("active");
+});
+
+document.addEventListener("click", function (e) {
+  if (
+    e.target.id != "menu" &&
+    e.target.id != "navbarNav" &&
+    e.target.id != "menuBar"
+  ) {
+    menuBtn.classList.remove("active");
+    navbarNav.classList.remove("active");
+  }
+});
 
 window.addEventListener("resize", function () {
   if (this.innerWidth >= 991) {
@@ -79,18 +95,6 @@ for (const a of navA) {
   });
 }
 
-document.body.addEventListener("click", function (e) {
-  if (e.target.id != "menu" && e.target.id != "navbarNav") {
-    menuBtn.classList.remove("active");
-    navbarNav.classList.remove("active");
-  }
-});
-
-menuBtn.addEventListener("click", function () {
-  this.classList.toggle("active");
-  navbarNav.classList.toggle("active");
-});
-
 const projectIcons = document.querySelectorAll(".project__icons");
 const titleProject = document.querySelectorAll(".project__title");
 
@@ -132,5 +136,5 @@ const navLinkIntersection = new IntersectionObserver(
       }
     }
   },
-  { threshold: 0.85 }
+  { threshold: ".6" }
 );

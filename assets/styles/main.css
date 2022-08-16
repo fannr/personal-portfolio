@@ -13,6 +13,36 @@ body {
   background: #0a192f;
 }
 
+h1 {
+  font-size: clamp(2rem, 5.3vw, 5rem);
+}
+
+h2,
+h2::before {
+  font-size: clamp(1.2rem, 2vw, 2.5rem) !important;
+}
+
+.contact h2 {
+  font-size: clamp(2rem, 5vw, 3rem) !important;
+}
+
+.brand h3 a {
+  font-size: clamp(1.2rem, 1.5vw, 2rem) !important;
+}
+
+h3 {
+  font-size: clamp(1rem, 1.5vw, 2rem) !important;
+}
+
+.experience span {
+  font-size: clamp(0.8rem, 1.2vw, 1.5rem) !important;
+}
+
+p,
+li {
+  font-size: clamp(14px, 2.5vw, 18px) !important;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -81,7 +111,6 @@ body {
   justify-content: center;
   align-items: center;
   transition-delay: 0.5s;
-  font-size: calc(1.5vw + 0.5rem);
   overflow-y: hidden;
 }
 
@@ -119,15 +148,10 @@ body.active {
 .home p {
   color: #8892b0;
   margin: 20px 0 0;
-  /* font-size: 18px; */
-  /* font-size: calc(1.5vw + 0.45rem); */
-  font-size: clamp(15px, 2.5vw, 18px);
   max-width: 560px;
 }
 
 p.fira__mono {
-  /* font-size: 18px !important; */
-  font-size: clamp(15px, 2.5vw, 18px);
   margin-bottom: 17px;
   margin-left: 4px;
   color: #64ffda !important;
@@ -136,7 +160,6 @@ p.fira__mono {
 
 .home h1 {
   color: #ccd6f6;
-  font-size: calc(5vw + 0.24rem);
 }
 
 .text2 {
@@ -216,14 +239,14 @@ a {
   margin: 0 15px;
   color: #ccd6f6;
   font-family: "Fira Mono", monospace !important;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .navbar-nav a:before {
   content: attr(data-index);
   margin-right: 3px;
   color: #64ffda;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .navbar-nav a:hover {
@@ -235,21 +258,17 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 0;
+  padding: 1.2em 0;
 }
 
 /* about */
 aside {
-  padding-top: 30px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
+  padding-top: 90px !important;
   min-height: 100vh;
 }
 
-aside .content__about > * {
+aside .content__about > *,
+.content__p > * {
   margin-bottom: 15px;
 }
 
@@ -258,11 +277,14 @@ aside .content__about .animateAbout > * {
 }
 
 .content__about {
-  flex: 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .picture__about {
-  flex: 1;
   position: relative;
   width: 100%;
   text-align: center;
@@ -270,35 +292,34 @@ aside .content__about .animateAbout > * {
   justify-content: center;
 }
 
-aside h2 {
-  color: #ccd6f6;
-  position: relative;
-}
-
 aside div h2:before {
   content: "01.";
   margin-right: 8px;
   font-family: "Fira Mono", monospace !important;
   color: #64ffda;
-  font-size: 22px;
   font-weight: 100;
 }
 
-aside div h2:after {
-  content: "";
-  position: absolute;
-  left: 175px;
-  top: 18px;
-  display: block;
-  width: 300px;
+.title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px !important;
+}
+
+.line {
+  width: 20%;
   height: 1px;
-  background-color: rgba(158, 167, 192, 0.3);
+  background: #495670;
+}
+
+aside h2 {
+  color: #ccd6f6;
 }
 
 aside p,
 li {
   color: #8892b0;
-  font-size: clamp(15px, 2.5vw, 18px);
 }
 
 ul li {
@@ -361,33 +382,15 @@ img:hover {
   margin-left: 100px;
 }
 
-.experience h2 {
-  margin-bottom: 30px !important;
-  position: relative;
-}
-
 .experience h2:before {
   content: "02.";
   margin-right: 8px;
   font-family: "Fira Mono", monospace !important;
   color: #64ffda;
-  font-size: 22px;
   font-weight: 100;
 }
 
-.experience h2:after {
-  content: "";
-  position: absolute;
-  left: 190px;
-  top: 18px;
-  display: block;
-  width: 300px;
-  height: 1px;
-  background-color: rgba(158, 167, 192, 0.3);
-}
-
 .experience h3 {
-  font-size: 19px;
   font-weight: 500;
 }
 
@@ -410,12 +413,14 @@ img:hover {
 
 /* project */
 .project {
+  padding-top: 90px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .container__card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -424,7 +429,6 @@ img:hover {
 
 .project h2 {
   grid-column: 1/ -1;
-  margin-bottom: 30px;
 }
 
 .project__card {
@@ -514,17 +518,6 @@ i {
   font-size: 22px;
   font-weight: 100;
 }
-
-.project h2:after {
-  content: "";
-  position: absolute;
-  left: 270px;
-  top: 18px;
-  display: block;
-  width: 300px;
-  height: 1px;
-  background-color: rgba(158, 167, 192, 0.3);
-}
 /* project */
 
 /* Contact */
@@ -587,14 +580,10 @@ footer p {
   nav .container {
     margin: 0 100px;
   }
-
-  aside div h2:after {
-    width: 200px;
-  }
 }
 
 @media (max-width: 991px) {
-  aside {
+  .content__about {
     grid-template-columns: 1fr;
   }
   .container {
@@ -613,7 +602,6 @@ footer p {
     opacity: 0;
     visibility: hidden;
     flex-direction: column;
-    pointer-events: none !important;
     justify-content: space-evenly;
     border-radius: 4px;
     background: #112240;
@@ -622,9 +610,12 @@ footer p {
     right: 70px;
     top: 20px;
     font-size: clamp(15px, 0, 18px);
+    transform: scale(0);
+    transform-origin: top right;
   }
 
   .navbar-nav.active {
+    transform: scale(1);
     opacity: 1;
     visibility: visible;
     width: 200px;
@@ -652,11 +643,13 @@ footer p {
     width: 20px;
     height: 3px;
     background: #64ffda;
+    border-radius: 4px;
   }
 
   .menu-btn__hamburger:before,
   .menu-btn__hamburger:after {
     content: "";
+    border-radius: 4px;
     position: absolute;
     width: 20px;
     height: 3px;
@@ -696,24 +689,6 @@ footer p {
   .experience ul {
     margin-left: 0px;
   }
-
-  aside div h2:after {
-    left: initial;
-    right: 0;
-    min-width: calc(100% - 175px);
-  }
-
-  .experience h2:after {
-    left: initial;
-    right: 0;
-    width: calc(100% - 190px);
-  }
-
-  .project h2:after {
-    left: initial;
-    right: 0;
-    width: calc(100% - 270px);
-  }
 }
 
 @media (max-width: 768px) {
@@ -750,15 +725,6 @@ footer p {
 
   .navbar-nav {
     right: 18px;
-  }
-
-  .contact h1 {
-    font-size: 32px;
-  }
-
-  .experience__subtitle span:nth-child(2) {
-    margin-top: 3px;
-    font-size: 12px;
   }
 }
 
