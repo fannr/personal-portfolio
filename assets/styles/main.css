@@ -30,11 +30,11 @@ h2::before {
 }
 
 h3 {
-  font-size: 20px !important;
+  font-size: 18px !important;
 }
 
 .experience span,
-.about li {
+ul li {
   font-size: 15px !important;
 }
 
@@ -709,11 +709,11 @@ footer p {
   }
 
   h3 {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
 
   .experience span,
-  .about li {
+  ul li {
     font-size: 13px !important;
   }
 
@@ -763,12 +763,12 @@ footer p {
   }
 
   h3 {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 
   .experience span,
-  .about li {
-    font-size: 11px !important;
+  ul li {
+    font-size: 9px !important;
   }
 
   .project,
