@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  font-size: 48px !important;
+  font-size: 58px;
 }
 
 h2,
@@ -33,13 +33,14 @@ h3 {
   font-size: 20px !important;
 }
 
-span,
-li {
+.experience span,
+.about li {
   font-size: 15px !important;
 }
 
 p,
-a {
+a,
+a::before {
   font-size: 16px !important;
 }
 
@@ -583,6 +584,10 @@ footer p {
 }
 
 @media (max-width: 991px) {
+  h1 {
+    font-size: 48px;
+  }
+
   .content__about {
     grid-template-columns: 1fr;
   }
@@ -693,7 +698,8 @@ footer p {
 
 @media (max-width: 768px) {
   p,
-  a {
+  a,
+  a:before {
     font-size: 14px !important;
   }
 
@@ -706,8 +712,8 @@ footer p {
     font-size: 18px !important;
   }
 
-  span,
-  li {
+  .experience span,
+  .about li {
     font-size: 13px !important;
   }
 
@@ -746,7 +752,8 @@ footer p {
   }
 
   p,
-  a {
+  a,
+  a:before {
     font-size: 12px !important;
   }
 
@@ -759,8 +766,8 @@ footer p {
     font-size: 16px !important;
   }
 
-  span,
-  li {
+  .experience span,
+  .about li {
     font-size: 11px !important;
   }
 
