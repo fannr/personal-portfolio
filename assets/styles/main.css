@@ -7,19 +7,18 @@
   font-family: "Poppins", sans-serif;
   transition: 0.3s ease-in-out;
 }
-
 body {
   overflow: hidden !important;
   background: #0a192f;
 }
 
 h1 {
-  font-size: clamp(2rem, 5.3vw, 5rem);
+  font-size: 48px !important;
 }
 
 h2,
 h2::before {
-  font-size: clamp(1.2rem, 2vw, 2.5rem) !important;
+  font-size: 22px !important;
 }
 
 .contact h2 {
@@ -31,16 +30,17 @@ h2::before {
 }
 
 h3 {
-  font-size: clamp(1rem, 1.5vw, 2rem) !important;
+  font-size: 20px !important;
 }
 
-.experience span {
-  font-size: clamp(0.8rem, 1.2vw, 1.5rem) !important;
+span,
+li {
+  font-size: 15px !important;
 }
 
 p,
-li {
-  font-size: clamp(14px, 2.5vw, 18px) !important;
+a {
+  font-size: 16px !important;
 }
 
 ::-webkit-scrollbar {
@@ -303,8 +303,8 @@ aside div h2:before {
 .title {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding-bottom: 30px !important;
+  gap: 15px;
+  padding-bottom: 15px;
 }
 
 .line {
@@ -479,7 +479,7 @@ img:hover {
 }
 
 .bi-folder {
-  font-size: 35px;
+  font-size: 32px;
 }
 
 .project__subtitle {
@@ -692,6 +692,33 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  p,
+  a {
+    font-size: 14px !important;
+  }
+
+  h2,
+  h2::before {
+    font-size: 20px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  span,
+  li {
+    font-size: 13px !important;
+  }
+
+  .bi-folder {
+    font-size: 28px !important;
+  }
+
+  h1 {
+    font-size: 40px !important;
+  }
+
   .container {
     margin: 0 50px;
   }
@@ -707,9 +734,36 @@ footer p {
   ul {
     width: 100%;
   }
+
+  .project__icons > * {
+    font-size: 18px !important;
+  }
 }
 
 @media (max-width: 576px) {
+  h1 {
+    font-size: 32px !important;
+  }
+
+  p,
+  a {
+    font-size: 12px !important;
+  }
+
+  h2,
+  h2::before {
+    font-size: 18px !important;
+  }
+
+  h3 {
+    font-size: 16px !important;
+  }
+
+  span,
+  li {
+    font-size: 11px !important;
+  }
+
   .project,
   .about {
     padding-top: 80px;
@@ -725,6 +779,14 @@ footer p {
 
   .navbar-nav {
     right: 18px;
+  }
+
+  .bi-folder {
+    font-size: 24px !important;
+  }
+
+  .project__icons > * {
+    font-size: 16px !important;
   }
 }
 
