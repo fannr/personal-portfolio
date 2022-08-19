@@ -573,6 +573,40 @@ footer p {
   color: #8892b0;
 }
 
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  transition: 0.5s;
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+  border: 1px solid #64ffda;
+  background: #64ffda;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  box-shadow: 0 10px 30px -5px #64ffda;
+}
+
+.scrollTop:hover {
+  opacity: 0.8 !important;
+}
+
+.scrollTop i {
+  color: #112240 !important;
+  font-size: 14px;
+  margin: auto;
+}
+
+.scrollTop.show {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
+
 @media (max-width: 1124px) {
   .container {
     margin: 0 120px;
@@ -613,7 +647,7 @@ footer p {
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
     position: fixed;
     right: 70px;
-    top: 20px;
+    top: 10px;
     font-size: clamp(15px, 0, 18px);
     transform: scale(0);
     transform-origin: top right;

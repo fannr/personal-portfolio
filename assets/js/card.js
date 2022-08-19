@@ -59,11 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
       .join("");
   })();
 
-  const elSection = document.querySelectorAll("[data-scroll-banner]");
-  for (const link of elSection) {
-    navLinkIntersection.observe(link);
-  }
-
   const elAnimate = document.querySelectorAll("[animate]");
   const animateObserver = new IntersectionObserver(
     (entries) => {

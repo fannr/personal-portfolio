@@ -138,3 +138,26 @@ const navLinkIntersection = new IntersectionObserver(
   },
   { threshold: ".6" }
 );
+
+const elSection = document.querySelectorAll("[data-scroll-banner]");
+
+const elScrollTop = document.querySelector(".scrollTop");
+let scrollTopObserver = new IntersectionObserver(
+  (entries) => {
+    for (let e of entries) {
+      if (e.isIntersecting) {
+        if (e.target.id == "home") {
+          elScrollTop.classList.remove("show");
+        } else {
+          elScrollTop.classList.add("show");
+        }
+      }
+    }
+  },
+  { threshold: ".6" }
+);
+
+for (const el of elSection) {
+  navLinkIntersection.observe(el);
+  scrollTopObserver.observe(el);
+}
