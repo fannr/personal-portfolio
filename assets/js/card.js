@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
       linkGithub: "https://github.com/fannr/Todo-blog-app",
       linkProject: "https://noerra-todo-blog-app.netlify.app/",
     },
+    {
+      title: "Book Apps",
+      desc: "Create a BookApps project there is a simple crud with localStorage",
+      subtitle: ["HTML", "CSS", "Javascript"],
+      linkGithub: "https://github.com/fannr/book-apps",
+      linkProject: "https://noerra-bookapps.netlify.app/",
+    },
   ];
 
   const projectContainer = document.querySelector(".container__card");
