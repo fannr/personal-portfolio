@@ -28,6 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
       linkGithub: "https://github.com/fannr/book-apps",
       linkProject: "https://noerra-bookapps.netlify.app/",
     },
+    {
+      title: "Shoppi Cart",
+      desc: "Create a simple minishop",
+      subtitle: ["HTML", "CSS", "Javascript"],
+      linkGithub: "https://github.com/fannr/shoppi-apps",
+      linkProject: "https://shoppi-apps.netlify.app/",
+    },
   ];
 
   const projectContainer = document.querySelector(".container__card");

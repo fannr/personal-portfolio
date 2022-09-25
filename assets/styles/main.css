@@ -12,6 +12,14 @@ body {
   background: #0a192f;
 }
 
+/* .smooth-scroll-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+} */
+
 h1 {
   font-size: 58px;
 }

@@ -1,3 +1,5 @@
+import "./card.js";
+
 const nav = document.querySelector(".navbar");
 const menuBtn = document.querySelector(".menu-btn");
 const navbarNav = document.querySelector("#navbarNav");
@@ -140,7 +142,6 @@ const navLinkIntersection = new IntersectionObserver(
 );
 
 const elSection = document.querySelectorAll("[data-scroll-banner]");
-
 const elScrollTop = document.querySelector(".scrollTop");
 let scrollTopObserver = new IntersectionObserver(
   (entries) => {
@@ -161,3 +162,21 @@ for (const el of elSection) {
   navLinkIntersection.observe(el);
   scrollTopObserver.observe(el);
 }
+
+// const scrollWrapper = document.querySelector(".smooth-scroll-wrapper");
+// const height = scrollWrapper.getBoundingClientRect().height - 1;
+// const speed = 0.04;
+
+// let offset = 0;
+
+// document.body.style.height = `${Math.floor(height)}px`;
+// function smoothScroll() {
+//   offset += (window.pageYOffset - offset) * speed;
+
+//   let scroll = `translateY(-${offset}px) translateZ(0)`;
+//   scrollWrapper.style.transform = scroll;
+
+//   callScroll = requestAnimationFrame(smoothScroll);
+// }
+
+// smoothScroll();

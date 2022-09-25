@@ -21,8 +21,7 @@
       type="image/x-icon"
     />
 
-    <script src="assets/js/script.js" defer></script>
-    <script src="assets/js/card.js" defer></script>
+    <script src="assets/js/script.js" type="module" defer></script>
   </head>
   <body id="home">
     <div class="loading">
@@ -30,7 +29,7 @@
     </div>
 
     <a href="#home" class="scrollTop"><i class="bi bi-arrow-up"></i></a>
-
+    <!-- <div class="smooth-scroll-wrapper"> -->
     <header>
       <nav class="navbar">
         <div class="container">
@@ -77,7 +76,13 @@
               data-index="04."
               >Contact</a
             >
-            <a href="#" class="resume navLink" animate-nav>Resume</a>
+            <a
+              href="./assets/CV (Fatah).pdf"
+              class="resume navLink"
+              animate-nav
+              download
+              >Resume</a
+            >
           </div>
         </div>
       </nav>
@@ -198,7 +203,7 @@
         <section class="container project" data-scroll-banner id="projects">
           <div class="project__container">
             <div class="title animate" animate>
-              <h2>My Some Projects</h2>
+              <h2 style="margin-bottom: 10px">My Some Projects</h2>
               <div class="line"></div>
             </div>
             <div class="container__card"></div>
@@ -233,5 +238,6 @@
         Copyright &copy; Reserved & Built by Fatah Noer.
       </p>
     </footer>
+    <!-- </div> -->
   </body>
 </html>
