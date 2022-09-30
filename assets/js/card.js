@@ -49,6 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
       linkGithub: "https://github.com/fannr/simple-auth-system",
       linkProject: "https://simple-system-auth.netlify.app/",
     },
+    {
+      title: "Link Tree Web",
+      desc: "Simple landing page",
+      subtitle: ["HTML", "CSS", "Javascript"],
+      linkGithub: "https://github.com/fannr/linktree",
+      linkProject: "https://linktree-noerra.netlify.app/",
+    },
   ];
 
   const projectContainer = document.querySelector(".container__card");
