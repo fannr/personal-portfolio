@@ -35,6 +35,20 @@ document.addEventListener("DOMContentLoaded", function () {
       linkGithub: "https://github.com/fannr/shoppi-apps",
       linkProject: "https://shoppi-apps.netlify.app/",
     },
+    {
+      title: "Meal Finder",
+      desc: "Consume API Public, fitur filter search, get, details items",
+      subtitle: ["HTML", "CSS", "Javascript", "Webpack", "Bootstrap 5"],
+      linkGithub: "https://github.com/fannr/meal-finder",
+      linkProject: "https://meal-finder-noerra.netlify.app/",
+    },
+    {
+      title: "Auth System",
+      desc: "Create a fitur login, register, forgotPassword with Localstorage",
+      subtitle: ["HTML", "CSS", "Javascript"],
+      linkGithub: "https://github.com/fannr/simple-auth-system",
+      linkProject: "https://simple-system-auth.netlify.app/",
+    },
   ];
 
   const projectContainer = document.querySelector(".container__card");
