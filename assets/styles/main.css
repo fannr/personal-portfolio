@@ -798,6 +798,10 @@ footer p {
     font-size: 12px !important;
   }
 
+  small {
+    font-size: 10px !important;
+  }
+
   h2,
   h2::before {
     font-size: 18px !important;
